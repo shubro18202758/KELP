@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="450" y="45" font-family="Arial Black" font-size="24" fill="#f8fafc" text-anchor="middle">KELP Tech Stack</text>
+  
+  <!-- AI Layer -->
+  <g transform="translate(50, 80)">
+    <rect width="800" height="90" rx="10" fill="url(#aiGrad)" opacity="0.15"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="url(#aiGrad)"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#a78bfa" font-weight="bold">🧠 AI & Machine Learning</text>
+    
+    <!-- Tech boxes -->
+    <g transform="translate(20, 45)">
+      <rect width="120" height="35" rx="5" fill="#1e1b4b"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#e0e7ff" text-anchor="middle">Ollama</text>
+    </g>
+    <g transform="translate(160, 45)">
+      <rect width="120" height="35" rx="5" fill="#1e1b4b"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#e0e7ff" text-anchor="middle">Qwen2.5:7B</text>
+    </g>
+    <g transform="translate(300, 45)">
+      <rect width="120" height="35" rx="5" fill="#1e1b4b"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#e0e7ff" text-anchor="middle">PyTorch</text>
+    </g>
+    <g transform="translate(440, 45)">
+      <rect width="120" height="35" rx="5" fill="#1e1b4b"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#e0e7ff" text-anchor="middle">Transformers</text>
+    </g>
+    <g transform="translate(580, 45)">
+      <rect width="120" height="35" rx="5" fill="#1e1b4b"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#e0e7ff" text-anchor="middle">Accelerate</text>
+    </g>
+  </g>
+  
+  <!-- Data Layer -->
+  <g transform="translate(50, 185)">
+    <rect width="800" height="90" rx="10" fill="url(#dataGrad)" opacity="0.15"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="url(#dataGrad)"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#60a5fa" font-weight="bold">📊 Data Processing</text>
+    
+    <g transform="translate(20, 45)">
+      <rect width="120" height="35" rx="5" fill="#172554"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#dbeafe" text-anchor="middle">Pandas</text>
+    </g>
+    <g transform="translate(160, 45)">
+      <rect width="120" height="35" rx="5" fill="#172554"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#dbeafe" text-anchor="middle">Matplotlib</text>
+    </g>
+    <g transform="translate(300, 45)">
+      <rect width="120" height="35" rx="5" fill="#172554"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#dbeafe" text-anchor="middle">python-pptx</text>
+    </g>
+    <g transform="translate(440, 45)">
+      <rect width="140" height="35" rx="5" fill="#172554"/>
+      <text x="70" y="22" font-family="Arial" font-size="12" fill="#dbeafe" text-anchor="middle">BeautifulSoup</text>
+    </g>
+    <g transform="translate(600, 45)">
+      <rect width="100" height="35" rx="5" fill="#172554"/>
+      <text x="50" y="22" font-family="Arial" font-size="12" fill="#dbeafe" text-anchor="middle">aiohttp</text>
+    </g>
+  </g>
+  
+  <!-- Web Layer -->
+  <g transform="translate(50, 290)">
+    <rect width="800" height="90" rx="10" fill="url(#webGrad)" opacity="0.15"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="url(#webGrad)"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#67e8f9" font-weight="bold">🌐 Web Intelligence</text>
+    
+    <g transform="translate(20, 45)">
+      <rect width="120" height="35" rx="5" fill="#083344"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#cffafe" text-anchor="middle">ddgs</text>
+    </g>
+    <g transform="translate(160, 45)">
+      <rect width="120" height="35" rx="5" fill="#083344"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#cffafe" text-anchor="middle">icrawler</text>
+    </g>
+    <g transform="translate(300, 45)">
+      <rect width="120" height="35" rx="5" fill="#083344"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#cffafe" text-anchor="middle">lxml</text>
+    </g>
+    <g transform="translate(440, 45)">
+      <rect width="120" height="35" rx="5" fill="#083344"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#cffafe" text-anchor="middle">Requests</text>
+    </g>
+  </g>
+  
+  <!-- Doc Layer -->
+  <g transform="translate(50, 395)">
+    <rect width="800" height="90" rx="10" fill="url(#docGrad)" opacity="0.15"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="url(#docGrad)"/>
+    <text x="20" y="30" font-family="Arial" font-size="16" fill="#4ade80" font-weight="bold">📄 Document Generation</text>
+    
+    <g transform="translate(20, 45)">
+      <rect width="120" height="35" rx="5" fill="#052e16"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#bbf7d0" text-anchor="middle">python-pptx</text>
+    </g>
+    <g transform="translate(160, 45)">
+      <rect width="120" height="35" rx="5" fill="#052e16"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#bbf7d0" text-anchor="middle">python-docx</text>
+    </g>
+    <g transform="translate(300, 45)">
+      <rect width="120" height="35" rx="5" fill="#052e16"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#bbf7d0" text-anchor="middle">PyPDF2</text>
+    </g>
+    <g transform="translate(440, 45)">
+      <rect width="120" height="35" rx="5" fill="#052e16"/>
+      <text x="60" y="22" font-family="Arial" font-size="12" fill="#bbf7d0" text-anchor="middle">openpyxl</text>
+    </g>
+  </g>
+</svg>

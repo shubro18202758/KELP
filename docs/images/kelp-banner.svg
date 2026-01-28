@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative waves -->
+  <path d="M0,250 Q300,200 600,250 T1200,250 L1200,300 L0,300 Z" fill="url(#waveGradient)"/>
+  <path d="M0,270 Q300,220 600,270 T1200,270 L1200,300 L0,300 Z" fill="url(#waveGradient)" opacity="0.5"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="150" r="80" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.2"/>
+  <circle cx="100" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.15"/>
+  <circle cx="1100" cy="150" r="60" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.2"/>
+  <circle cx="1100" cy="150" r="80" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.15"/>
+  
+  <!-- Kelp seaweed decoration (left) -->
+  <g opacity="0.3" transform="translate(50, 50)">
+    <path d="M20,200 Q30,150 20,100 Q10,50 25,0" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40,200 Q55,140 45,80 Q35,20 50,0" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60,200 Q50,160 60,120 Q70,80 55,40" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Kelp seaweed decoration (right) -->
+  <g opacity="0.3" transform="translate(1080, 50)">
+    <path d="M20,200 Q10,150 20,100 Q30,50 15,0" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40,200 Q25,140 35,80 Q45,20 30,0" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60,200 Q70,160 60,120 Q50,80 65,40" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="600" y="120" font-family="Arial Black, sans-serif" font-size="80" font-weight="900" fill="url(#textGradient)" text-anchor="middle" filter="url(#glow)">KELP</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="165" font-family="Arial, sans-serif" font-size="22" fill="#94a3b8" text-anchor="middle" letter-spacing="3">AI-POWERED INVESTMENT TEASER PIPELINE</text>
+  
+  <!-- Feature badges -->
+  <g transform="translate(300, 200)">
+    <rect x="0" y="0" width="140" height="30" rx="15" fill="#22d3ee" opacity="0.2"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" fill="#22d3ee" text-anchor="middle">🤖 GPU-Accelerated</text>
+  </g>
+  <g transform="translate(460, 200)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="#3b82f6" opacity="0.2"/>
+    <text x="65" y="20" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">🌐 Web Research</text>
+  </g>
+  <g transform="translate(610, 200)">
+    <rect x="0" y="0" width="140" height="30" rx="15" fill="#8b5cf6" opacity="0.2"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" fill="#8b5cf6" text-anchor="middle">🔒 Privacy-First</text>
+  </g>
+  <g transform="translate(770, 200)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="#22d3ee" opacity="0.2"/>
+    <text x="65" y="20" font-family="Arial, sans-serif" font-size="12" fill="#22d3ee" text-anchor="middle">📊 Auto PPT</text>
+  </g>
+  
+  <!-- Version badge -->
+  <g transform="translate(1050, 20)">
+    <rect x="0" y="0" width="80" height="24" rx="12" fill="#22c55e" opacity="0.2"/>
+    <text x="40" y="16" font-family="Arial, sans-serif" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="bold">v5.0</text>
+  </g>
+</svg>
